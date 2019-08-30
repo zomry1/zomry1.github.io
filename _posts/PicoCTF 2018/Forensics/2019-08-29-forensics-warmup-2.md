@@ -1,8 +1,8 @@
 ---
 layout: post
 title: PicoCTF 2018 - Forensics Warmup 2
-categories: [PicoCTF, Forenscis]
-tags: [Easy, Forenscis, Image]
+categories: [PicoCTF, Forensics]
+tags: [Easy, Forensics, Image]
 ---
 
 ## Information
