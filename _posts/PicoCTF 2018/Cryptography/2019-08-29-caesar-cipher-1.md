@@ -2,6 +2,7 @@
 layout: post
 title: PicoCTF 2018 - Caesar cipher 1
 categories: [PicoCTF, Cryptography]
+tags: [Easy, Cryptography, Caesar cipher, Python]
 ---
 
 ## Information

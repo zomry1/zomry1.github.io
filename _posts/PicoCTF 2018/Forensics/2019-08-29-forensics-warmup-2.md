@@ -2,6 +2,7 @@
 layout: post
 title: PicoCTF 2018 - Forensics Warmup 2
 categories: [PicoCTF, Forenscis]
+tags: [Easy, Forenscis, Image]
 ---
 
 ## Information
@@ -38,7 +39,9 @@ the information we get back is:
 > density 75x75, segment length 16, baseline, precision 8, 909x190, frames 3
 
 so it's a JPEG file and not PNG, we want to rename the extension of the file to JPEG
-go back to the terminal -*> mv flag.png flag.jpeg
+go back to the terminal 
+
+ > mv flag.png flag.jpeg
 
 **mv** - command that move files from path to path and can also be used for rename a file
 ## Flag

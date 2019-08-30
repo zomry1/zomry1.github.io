@@ -2,13 +2,14 @@
 layout: post
 title: PicoCTF 2018 - Resources
 categories: [PicoCTF, General Skills]
+tags: [Very Easy, Web]
 ---
 
 ## Information
 
 | Points |Category  | Level|
 |--|--|--|
-| 50 | General Skills |Easy |
+| 50 | General Skills |Very Easy |
 
 ## Challenge
 

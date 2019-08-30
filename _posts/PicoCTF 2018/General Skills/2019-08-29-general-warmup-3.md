@@ -2,6 +2,7 @@
 layout: post
 title: PicoCTF 2018 - General Warmup 3
 categories: [PicoCTF, General Skills]
+tags: [Very Easy, Python]
 ---
 
 ## Information

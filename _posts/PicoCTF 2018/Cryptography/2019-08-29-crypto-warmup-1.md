@@ -2,6 +2,7 @@
 layout: post
 title: PicoCTF 2018 - Crypto Warmup 1
 categories: [PicoCTF, Cryptography]
+tags: [Easy, Cryptography, Web tool]
 ---
 
 ## Information
