@@ -1,57 +1,40 @@
 ---
 layout: post
-title: PicoCTF 2019 - plumbing
+title: PicoCTF 2019 - strings it
 categories: [PicoCTF, General Skills]
 tags: [Easy, General Skills]
 ---
 
-# *plumbing*
+# *strings it*
 
 ## Information
 
 | Points |Category  | Level|
 |--|--|--|
-| 200 |General Skills  |Easy |
+| 100 |General Skills  |Easy |
 
 ## Challenge
 
-> Sometimes you need to handle process data outside of a file. Can you find a way to keep the output from this program and search for the flag? Connect to `2019shell1.picoctf.com 57911`.
-
-Submit!
-
+> Can you find the flag in [file](https://2019shell1.picoctf.com/static/d97e691ff0842819be9dfcb767c074d9/strings) without running it? You can also find the file in /problems/strings-it_0_b76c77672f6285e3a39c188481cdff99 on the shell server.
+> 
 ### Hint
 
-> Remember the flag format is picoCTF{XXXX}
-> What's a pipe? No not that kind of pipe... This  [kind](http://www.linfo.org/pipes.html)
+> [strings](https://linux.die.net/man/1/strings)
 
 ## Solution
 
-To get the file we need to use the shell of the site so open this [url](https://2019game.picoctf.com/shell)
-In order to connect you need to enter your username and password.
-No to get the problem folder we need to go back 2 folders and then enter the problem folder so write:
+First of all, we want to make "strings" file readable, so let's use the strings command
+> open terminal -> move to the folder of the file (by cd) -*> strings strings > output.txt
 
-    cd ..
-    cd ..
-    cd /problems/first-grep--part-ii_0_b68f6a4e9cb3a7aad4090dea9dd80ce1/files
+* **strings** - the strings command cast binary/executable file to human-readable string.
+	* command syntax:
+		>   strings FILENAME
+		
+added **> output.txt** to save the results of the command in output.txt file.
+now, we can open the output.txt file and see a lot of garbage, let's do the same trick we did in
+grep 1(add link).
 
-Now us ls to see what in the directory:
-
-`ls`
-
-So there are many directory in it, and many more in it's and on and on and on...
-We really need to do grep in each folder?
-
-There is an easy way to do grep search in recursive way (that way we will search in each inner folder).
-
-The way to do that, it's only include the -r flag in the grep command so let's write:
-
-    grep -r 'picoCTF{'
-   
-   And we got this:
-
->    files9/file26:picoCTF{grep_r_to_find_this_e4fa3ba7}
-
-We found the flag and it's in the files26 that in the files9 folder
+    open terminal -> move to the folder of the file (by cd) -*> grep "picoCTF" file
 
 ## Flag
-> `picoCTF{grep_r_to_find_this_e4fa3ba7}`
+> `picoCTF{5tRIng5_1T_f1527258}`

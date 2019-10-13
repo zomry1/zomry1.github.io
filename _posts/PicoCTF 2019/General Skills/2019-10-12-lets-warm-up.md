@@ -1,31 +1,34 @@
 ---
 layout: post
-title: PicoCTF 2019 - Bases
+title: PicoCTF 2019 - Lets Warm Up
 categories: [PicoCTF, General Skills]
 tags: [Easy, General Skills]
 ---
 
-
-# *Bases*
+# *Lets Warm Up*
 
 ## Information
 
 | Points |Category  | Level|
 |--|--|--|
-| 100 |General Skills  |Easy |
+| 50 |General Skills  |Easy |
 
 ## Challenge
 
-> What does this `bDNhcm5fdGgzX3IwcDM1` mean? I think it has something to do with bases.
+> What is 0x3D (base 16) in decimal (base 10).
 
 ### Hint
 
-> Submit your answer in our competition's flag format. For example, if you answer was 'hello', you would submit 'picoCTF{hello}' as the flag.
+> Submit your answer in our competition's flag format. For example, if you answer was '22', you would submit 'picoCTF{22}' as the flag.
 
 ## Solution
 
-So common 'Base' that used in CTF challenges is 64Base, I used this site to decode the text
-[here](https://www.base64decode.org/) and found the flag!
+
+Let's open python and check the value - 
+
+    Open termianl -> "python" -*> 0x3D
+
+*python automatically print the number in his decimal base
 
 ## Flag
-> `picoCTF{l3arn_th3_r0p35}`
+> `picoCTF{61}`

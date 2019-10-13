@@ -1,12 +1,11 @@
 ---
 layout: post
-title: PicoCTF 2019 - Bases
+title: PicoCTF 2019 - First Grep
 categories: [PicoCTF, General Skills]
 tags: [Easy, General Skills]
 ---
 
-
-# *Bases*
+# *First Grep*
 
 ## Information
 
@@ -16,16 +15,22 @@ tags: [Easy, General Skills]
 
 ## Challenge
 
-> What does this `bDNhcm5fdGgzX3IwcDM1` mean? I think it has something to do with bases.
+> Can you find the flag in [file](https://2019shell1.picoctf.com/static/458ae91cb23746189bf490f0c8d9a919/file)? This would be really tedious to look through manually, something tells me there is a better way. You can also find the file in /problems/first-grep_2_04dbf496b78e6c37c0097cdfef734d88 on the shell server.
 
 ### Hint
 
-> Submit your answer in our competition's flag format. For example, if you answer was 'hello', you would submit 'picoCTF{hello}' as the flag.
+> grep [tutorial](https://ryanstutorials.net/linuxtutorial/grep.php)
 
 ## Solution
 
-So common 'Base' that used in CTF challenges is 64Base, I used this site to decode the text
-[here](https://www.base64decode.org/) and found the flag!
+Let's download the file, it's full in garbage.
+The name of the challenge is grep so let's use it.
+> open terminal -> move to the folder of the file (by cd) -*> grep "picoCTF" file
+
+ 
+* grep - the grep command search a pattern in the text 
+	* command syntax:
+		>   grep "PATTERN" FILENAME
 
 ## Flag
-> `picoCTF{l3arn_th3_r0p35}`
+> `picoCTF{61}`
